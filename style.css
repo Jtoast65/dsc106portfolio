@@ -3,8 +3,196 @@ body {
          and use the OS’s UI font as the website font
        */
     font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: auto;
+    padding: 1rem;
+    background-color: oklch(97% 0.01 250);
+    color: oklch(22% 0.03 255);
   }
   img {
     max-width: 300px;
     height: auto;
   }
+
+  :root {
+    --color-accent: oklch(65% 50% 0);
+  }
+  
+  html {
+    accent-color: var(--color-accent);
+  }
+  
+  nav {
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid oklch(80% 3% 200);
+  }
+  
+  nav a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+  }
+  
+  nav a.current {
+    border-bottom: 0.4em solid oklch(80% 3% 200);
+    padding-bottom: 0.1em;
+  }
+  
+  nav a:hover {
+    border-bottom: 0.4em solid var(--color-accent);
+    padding-bottom: 0.1em;
+    background-color: oklch(from var(--color-accent) 95% 5% h);
+  }
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+form label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+form button {
+  grid-column: 1 / -1;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+.projects article h2 {
+  margin: 0;
+}
+
+.projects article img {
+  width: 100%;
+  height: auto;
+}
+
+.resume-page {
+  --resume-accent: oklch(62% 0.18 255);
+}
+
+.resume-page h1 {
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  margin-bottom: 0.2em;
+}
+
+.resume-page > p:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+.resume-page > p:first-of-type a {
+  color: var(--resume-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.resume-page > p:first-of-type a:hover {
+  text-decoration: underline;
+}
+
+.resume-page section {
+  background: white;
+  border: 1px solid oklch(90% 0.01 255);
+  border-left: 0.5rem solid var(--resume-accent);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 8px 24px oklch(0% 0 0 / 0.06);
+}
+
+.resume-page section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: var(--resume-accent);
+}
+
+.resume-page article {
+  margin-bottom: 1.5rem;
+}
+
+.resume-page article:last-child {
+  margin-bottom: 0;
+}
+
+.resume-page article h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.resume-page article p {
+  margin: 0.35rem 0;
+}
+
+.resume-page ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.resume-page li {
+  margin: 0.35rem 0;
+}
+
+.resume-page time {
+  font-weight: 600;
+  color: oklch(45% 0.03 255);
+}
+
+.resume-page strong {
+  color: oklch(30% 0.03 255);
+}
+
+@media (min-width: 900px) {
+  .resume-page section:first-of-type article header,
+  .resume-page section:nth-of-type(2) article header,
+  .resume-page section:nth-of-type(3) article header,
+  .resume-page section:nth-of-type(4) article header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
