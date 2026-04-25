@@ -99,7 +99,8 @@ h6 {
 .projects article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 4;
+  gap: 0.5rem;
 }
 
 .projects article h2 {
@@ -115,7 +116,8 @@ h6 {
 
 .projects article img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
 }
 
 .resume-page {
