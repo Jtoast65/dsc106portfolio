@@ -106,6 +106,13 @@ h6 {
   margin: 0;
 }
 
+.project-year {
+  margin: 0;
+  font-size: 0.9rem;
+  color: color-mix(in oklch, canvastext 65%, canvas 35%);
+  font-weight: 600;
+}
+
 .projects article img {
   width: 100%;
   height: auto;

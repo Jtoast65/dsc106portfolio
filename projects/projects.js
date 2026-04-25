@@ -3,7 +3,8 @@ import { fetchJSON, renderProjects } from '../global.js';
 const projects = await fetchJSON('../lib/projects.json');
 const projectsContainer = document.querySelector('.projects');
 
-renderProjects(projects, projectsContainer, 'h2');
+const sortedProjects = projects.sort((a, b) => Number(b.year) - Number(a.year));
+renderProjects(sortedProjects, projectsContainer, 'h2');
 
 const projectsTitle = document.querySelector('.projects-title');
-projectsTitle.textContent = `${projects.length} Projects`;
+projectsTitle.textContent = `${sortedProjects.length} Projects`;
