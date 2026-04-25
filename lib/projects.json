@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Personal Portfolio Website",
+      "year": "2026",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A responsive personal website built with HTML, CSS, and JavaScript featuring dynamic navigation, dark mode, JSON-rendered projects, and GitHub profile stats."
+    },
+    {
+      "title": "SoCalGuessr City Classifier",
+      "year": "2026",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A deep learning project that classifies Southern California Street View images into six cities using a MobileNetV3-Small model, transfer learning, and multi-view test-time augmentation."
+    },
+    {
+      "title": "Smart Food Tracker (Nutribase)",
+      "year": "2025",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A full-stack React and MongoDB web app connected to ESP32 hardware for shared-fridge food tracking, real-time item management, and weight syncing."
+    },
+    {
+      "title": "Image & Audio Processing App",
+      "year": "2025",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "An object-oriented Python application using NumPy and PIL for RGB image editing, WAV audio processing, and a KNN image classifier."
+    },
+    {
+      "title": "Clash Royale Win Rate Analysis",
+      "year": "2025",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A data science project analyzing how deck elixir cost influences win rate among the top 1000 Clash Royale players, using data cleaning, visualization, and predictive modeling."
+    },
+    {
+      "title": "Course Grades Analysis Toolkit",
+      "year": "2025",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A Python and pandas project that analyzes course grade data by computing assignment totals, lateness penalties, redemption effects, section rankings, and a letter-grade heat map."
+    },
+    {
+      "title": "Loan and Tax Data Analysis",
+      "year": "2025",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A Python, pandas, and Plotly project that analyzes loan data, studies interest rates and missingness patterns, cleans state tax brackets, and estimates borrowers’ disposable income."
+    },
+    {
+      "title": "Language Modeling with N-Grams",
+      "year": "2025",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A Python and pandas project that downloads and tokenizes Project Gutenberg books, then builds uniform, unigram, and N-gram language models for text probability and sampling."
+    },
+    {
+      "title": "Early Game Advantage in Professional League of Legends",
+      "year": "2025",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A data science project on how early-game stats relate to pro League of Legends match outcomes."
+    },
+    {
+      "title": "Song Recommender System",
+      "year": "2024",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A Python recommendation engine built with Pandas and scikit-learn using collaborative filtering on a large user-song dataset."
+    },
+    {
+      "title": "Word Search Solver in C",
+      "year": "2024",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A C program that solves word-search puzzles using recursive 8-direction search and prints the word path."
+    },
+    {
+      "title": "Tic-Tac-Toe AI in C++",
+      "year": "2023",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "A C++ Tic-Tac-Toe game with player-vs-player, player-vs-AI, and a game tree–based minimax strategy."
+    }
+  ]
