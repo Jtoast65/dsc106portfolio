@@ -70,5 +70,13 @@
       "year": "2023",
       "image": "https://vis-society.github.io/labs/2/images/empty.svg",
       "description": "A C++ Tic-Tac-Toe game with player-vs-player, player-vs-AI, and a game tree–based minimax strategy."
+    },
+
+    {
+      "title": "Bikewatching",
+      "year": "2026",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "An interactive Mapbox visualization of Boston-area bike lanes, BlueBike stations, and traffic patterns by time of day.",
+      "url": "https://jtoast65.github.io/bikes/"
     }
   ]
